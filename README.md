@@ -15,10 +15,10 @@ The full paper is available at: https://arxiv.org/pdf/1904.01941.pdf
 3、opencv-python==3.4.2                                                                                                       
 4、check requiremtns.txt                                                                                                      
 5、4 nvidia GPUs(we use 4 nvidia titanX)  
-6、scikit-image
-7、scipy
-8、h5py
-9、water
+6、scikit-image  
+7、scipy  
+8、h5py  
+9、water  
 
 ## Get the DDI dataset 
 [DDI](https://drive.google.com/drive/folders/15L14KyFoUHAqV_f1Jn-u20YYEYVH5u8Z). You can get some patches in the entire data.
