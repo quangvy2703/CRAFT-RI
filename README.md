@@ -23,8 +23,12 @@ The full paper is available at: https://arxiv.org/pdf/1904.01941.pdf
 ## Get the DDI dataset 
 [DDI](https://drive.google.com/drive/folders/15L14KyFoUHAqV_f1Jn-u20YYEYVH5u8Z). You can get some patches in the entire data.
 
+## Get the Syndata
+Download the Syndata, put into the data dir [LINK](http://www.robots.ox.ac.uk/~vgg/data/scenetext/SynthText.zip)
+
 ## Converting DDI data into IC15 format
-- Run **`python ic15dataconvert.py --source_data /path/to/idd-dataset-patch --output_dir ./data`**
+- Run **`python ic15dataconvert.py --source_data /path/to/idd-dataset-patch --output_dir ./data/DDI`**
+- To the end, you can see the Syndata and DDI data with IC15 format in data dir.
 
 ## Get pre-trained of CRAFT
 - CRAFT model trained on Syndata + MLT data [LINK](https://drive.google.com/open?id=1Jk4eGD7crsqCCg9C9VjCLkMN3ze8kutZ)
