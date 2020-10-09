@@ -10,11 +10,29 @@ Youngmin Baek, Bado Lee, Dongyoon Han, Sangdoo Yun, Hwalsuk Lee
 The full paper is available at: https://arxiv.org/pdf/1904.01941.pdf                                                         
 
 ## Install Requirements:                                                                                                        
-1、PyTroch>=0.4.1                                                                                                                             
-2、torchvision>=0.2.1 			                                                    																			                             
-3、opencv-python>=3.4.2                                                                                                       
+1、PyTroch==1.4.0                                                                                                                             
+2、torchvision==0.5.0 			                                                    																			                             
+3、opencv-python==3.4.2                                                                                                       
 4、check requiremtns.txt                                                                                                      
-5、4 nvidia GPUs(we use 4 nvidia titanX)                                                                                      
+5、4 nvidia GPUs(we use 4 nvidia titanX)  
+6、scikit-image
+7、scipy
+8、h5py
+9、water
+
+## Get the DDI dataset 
+[DDI](https://drive.google.com/drive/folders/15L14KyFoUHAqV_f1Jn-u20YYEYVH5u8Z). You can get some patches in the entire data.
+
+## Converting DDI data into IC15 format
+- Run **`python ic15dataconvert.py --source_data /path/to/idd-dataset-patch --output_dir ./data`**
+
+## Get pre-trained of CRAFT
+- CRAFT model trained on Syndata + MLT data [LINK](https://drive.google.com/open?id=1Jk4eGD7crsqCCg9C9VjCLkMN3ze8kutZ)
+- VGG16 backbone can be downloaded at [LINK](https://drive.google.com/open?id=1ZtvGpFQrbmEisB_GhmZb8UQOtvqY_-tW)
+- Putting all pre-trained model into the pretrain dir.
+
+## Training with pre-trained on Syndata + IC15 data
+- Run **`python trainic15data.py`**
 
 
 ## pre-trained model:
